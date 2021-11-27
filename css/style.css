@@ -1,0 +1,158 @@
+:root {
+  --primary: rgba(0, 0, 255,1);
+  --secondary:rgb(219, 108, 4);
+  --tertiary: rgba(0, 128, 128,1);
+  --dark: rgba(10, 10, 10, 1);
+  --light: rgb(200, 200, 160);
+}
+
+body {
+  font-family: "Roboto Slab", arial;
+  font-size: 20px;
+  font-weight: normal;
+  color:var(--primary);
+  background-color: var(--light); 
+}
+
+.wrapper {
+  margin: 100px auto 0 auto;
+  max-width: 80%;
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+.start {
+  text-align: center;
+}
+
+/*style for "View Highscores" */
+.scores {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+/*style for "Time" */
+.timer {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* style for feedback - "Correct" or "Wrong" */
+.feedback {
+  font-style: italic;
+  font-size: 120%;
+  margin-top: 20px;
+  padding-top: 10px;
+  color: var(--dark);
+  border-top: 2px solid rgb(201, 193, 193);
+}
+
+/* style for the link "View Highscores" */
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: color 0.1s;
+}
+
+/* style for hyperlink hover */
+a:hover {
+  color: var(--secondary);
+}
+
+/* style for button */
+button {
+  display: inline-block;
+  margin: 5px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-size: 100%;
+  background-color: var(--tertiary);
+  border-radius: 5px;
+  padding: 2px 10px;
+  color: white;
+  border: 0;
+  transition: background-color 0.1s;
+}
+
+/*style for button hover */
+button:hover {
+  background-color: var(--secondary);
+}
+
+/*style of choice button */
+.choices button {
+  display: block;
+  margin: 20px auto 10px auto;
+  max-width: 50%;
+}
+
+input[type="text"] {
+  font-size: 100%;
+}
+
+ol {
+  padding-left: 0px;
+  max-height: 400px;
+  overflow: auto;
+}
+
+li {
+  padding: 5px;
+  list-style: decimal inside none;
+}
+
+li:nth-child(odd) {
+  background-color: #dfdae7;
+}
+
+/* style for footer */
+footer  {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30%;
+  font-size: 1.0em;
+  text-align: center;
+  vertical-align: bottom;
+
+  /*animated footer*/
+
+  background-color: rgba(12, 219, 174, 0.4);
+  background-image:   
+    url('https://78.media.tumblr.com/cae86e76225a25b17332dfc9cf8b1121/tumblr_p7n8kqHMuD1uy4lhuo1_540.png'), 
+    url('https://78.media.tumblr.com/66445d34fe560351d474af69ef3f2fb0/tumblr_p7n908E1Jb1uy4lhuo1_1280.png'),
+    url('https://78.media.tumblr.com/8cd0a12b7d9d5ba2c7d26f42c25de99f/tumblr_p7n8kqHMuD1uy4lhuo2_1280.png'),
+    url('https://78.media.tumblr.com/5ecb41b654f4e8878f59445b948ede50/tumblr_p7n8on19cV1uy4lhuo1_1280.png'),
+    url('https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png');
+  background-size: cover;
+  background-repeat: repeat-x;
+  background-position: 
+    0 20%,
+    0 100%,
+    0 50%,
+    0 100%,
+    0 0;
+  background-size: 
+    2500px,
+    800px,
+    500px 200px,
+    1000px,
+    400px 260px;
+  animation: 50s para infinite linear;
+  }
+
+@keyframes para {
+  100% {
+    background-position: 
+      -5000px 20%,
+      -800px 95%,
+      500px 50%,
+      1000px 100%,
+      400px 0;
+    }
+}
