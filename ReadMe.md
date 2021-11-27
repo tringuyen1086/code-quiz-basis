@@ -18,4 +18,4 @@ A typical coding assessment is a combination of multiple-choice questions and in
 ![Project Screenshot](./assets/correct-answer-example.png)
 ![Project Screenshot](./assets/wrong-answer-example.png)
 ![Project Screenshot](./assets/finish-page-example.png)
-![Project Screenshot](./assets/high-score-examle.png)
+![Project Screenshot](./assets/high-score-example.png)
